@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child1{
+            display: inline-block;
+            padding-left: 20px;
+        }
+        .subchild{
+            display:none;
+        }
+        .child1:hover .subchild{
+            display:block;
+        }
+        .child1:hover{
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <div class="gfg">
+        <div class="child1">
+            <p>Courses</p>
+            <div class="subchild">
+                <p>Data Science</p>
+                <p>Machine Learning</p>
+                <p>NLP</p>
+                <p>SQL</p>
+            </div>
+        </div>
+        <div class="child1">
+            <p>Tutorials</p>
+            <div class="subchild">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JAVASCRIPT</p>
+                <p>PHP</p>
+            </div>
+        </div>
+        <div class="child1">
+            <p>Practice</p>
+            <div class="subchild">
+                <p>Free problem of the day</p>
+                <p>National Skillup</p>
+                <p>Coding practice</p>
+            </div>
+        </div>
+        <div class="child1">
+            <p>Jobs</p>
+            <div class="subchild">
+                <p>Apply now</p>
+                <p>Post jobs</p>
+                <p>Job updates</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

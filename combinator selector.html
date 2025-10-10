@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Heading >h2,h3{
+            color:blue;
+        }
+        .Subheading>p{
+            color:red;
+        }
+        .Heading p{
+            color:green;
+        }
+        .Subheading>h2{
+            color:yellow;
+        }
+        .Heading h4{
+            color:maroon;
+        }
+        .Heading>.Subheading>p,h4{
+            background-color:mediumseagreen;
+        }
+        .Subheading>div{
+            background-color:bisque;
+        }
+        .Subheading>div{
+            background-color:pink;
+        }
+        .subheading>h4~h2{
+            background-color:cyan;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="Heading">
+        <h2>This is heading 2</h2>
+        <!-- .Heading>h2, -->
+        <h3>this is heading 3</h3>
+        <!-- .Heading>h3, .Heading>h2+h3, .Heading>h2,h3-->
+        <div class="Subheading">
+            <!-- .Heading>div-->
+            <p>Combinator selectors are divided into following types</p>
+            <!-- .Subheading>p, .Heading p, -->
+            <h4>direct child</h4>
+            <!-- .Subheading>h4, .Subheading>p+h4, .Heading h4, .Heading>.Subheading>p,h4,.Heading>div-->
+            <div class="Section">
+                <!-- .Subheading>div-->
+                <p>Indirect child</p>
+                <!-- .Section>p,  .Subheading p, Heading p, .Subheading>div -->
+                <h1>Direct sibling</h1>
+                <!-- .Section>h1, .Section>p+h1, Subheading h1, Heading h1, .Heading>.Subheading>.Section>p,h1, .Heading p-->
+            </div>
+            <h2>General sibling</h2>
+            <!-- Subheading>h2, .Subheading>h2~p, .subheading>h2~h4-->
+        </div>
+        <h1>Simple selector</h1>
+        <!-- Heading>h1, h1~h2-->
+    </div>
+</body>
+</html>

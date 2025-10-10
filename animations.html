@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sunset{
+            margin-top: 15%;
+            margin-left:30%;
+            position:absolute;
+        }
+        body{
+            background-color: black;
+        }
+        img{
+            height:300px;
+            width:500px;
+        }
+        .absolute{
+            position: absolute;
+            margin-top: 8%;
+            margin-left: 5%;
+        }
+        /* .sun{
+            position:absolute;
+            margin-top: 10%;
+            margin-left: 10%;
+        } */
+         .front{
+            height:200px;
+            width:200px;
+            border-radius:100px;
+            background-color: orange;
+            position: relative;
+            top: 200px;
+            left: 300px;
+            z-index: 1000;
+         }
+         .back{
+            height:200px;
+            width:200px;
+            border-radius:100px;
+            background-color: yellow;
+            position: absolute;
+            left: 300px;
+         }
+    </style>
+</head>
+<body>
+    <div class="sunset">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDXTNJ36gy987nBof73N7gFP8JncRKmKCTTQ&s" alt="orange hour" class="relative">
+    </div>
+    <div>
+        <div class="front"></div>
+        <div class="back"></div>
+        
+    </div>
+</body>
+
+</html>
